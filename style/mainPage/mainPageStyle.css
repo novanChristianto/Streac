@@ -1,0 +1,173 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {display: block;}
+body {line-height: 1;}
+ol, ul {list-style: none;}
+blockquote, q {quotes: none;}
+blockquote:before, blockquote:after,
+q:before, q:after {content: '';content: none;}
+table {border-collapse: collapse;border-spacing: 0;}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .nav_container{width: 90%;}  
+    /* nav .nav_container img {width: 50%;}  */
+    nav .nav_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .nav_menu{
+        visibility: hidden;
+    }
+}
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .nav_container{width: 70%;}
+    .nav_menu{
+        visibility: hidden;
+    }
+}
+  
+/* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    .nav_container{width: 70%;} 
+    nav .nav_container img {
+        /* margin-top: 13px;    */
+        margin-right: 20px;
+    }
+}
+  
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .nav_container{width: 70%;}  
+    nav .nav_container img {
+         /* margin-top: 13px;    */ 
+        margin-right: 20px;
+    }
+}
+  
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { 
+    .nav_container{width: 70%;} 
+    nav .nav_container img {
+        /* margin-top: 13px;    */
+        margin-right: 20px;
+    }
+    .nav_menu{visibility: visible;}
+}
+
+body{
+    background-color: #F5F5F5;
+    font-family: "Myriad W08 Regular","Segoe UI","\5FAE\8EDF\6B63\9ED1\9AD4","Microsoft JhengHei","Arial","\65B0\7D30\660E\9AD4";
+}
+
+/* ============== NAV BAR ============ */
+nav {
+    top: 0;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.329);
+}
+nav .nav_container {
+    height: 50px;
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.nav_container .nav_menu{
+    position: absolute;
+    right: 0;
+}
+.nav_menu label{
+    margin: 0 20px;
+    color: #003980;
+    font-weight: 500;
+}
+
+
+.nav_menu:nth-child(2){margin-right:4%;}
+.nav_menu label:hover{cursor: pointer; }
+.icon_user{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1.5px solid #9b9b9b;
+    transition: 800ms;
+}
+.icon_user:hover{cursor: pointer; transform: scale(1.1);}
+
+
+/* ============== Header ============ */
+header{
+    width: 100%;
+    height: 780px;
+    background-color: #eeeff1;
+}
+
+/* ============== Main ============ */
+main{
+    width: 100%;
+    height:1000px ;
+}
+main .indexTabBar{
+    width: 100%;
+    height: 180px;
+    margin: 0px auto;
+    background-color: #ffffff;
+}
+
+
+
+/* ============== Footer ============ */
+footer{
+    margin-top: 1200px;
+    width: 100%;
+    height: 50px;
+
+}
+.footer_container{
+    width: 70%;
+    height: 50px;
+    margin: 0px auto;
+}
+.footer_container .footer_right label{
+    font-size: small;
+    font-weight: 500;
+    color: rgb(100, 100, 100);
+}

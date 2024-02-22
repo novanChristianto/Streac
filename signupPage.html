@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Akun</title>
+    <link rel="stylesheet" href="style/signupStyle/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    
+</head>
+<body>
+    <nav>
+        <div class="nav_container">
+            <img src="img/streacSignupLogo.png" >
+        </div>
+    </nav>
+    <hr>
+    <main>
+        <div class="header_text">
+            <label for="">Mendaftar Akun</label>
+            <p>Harap perhatikan bahwa akun ASUS sama dengan akun ROG. Jika Anda memiliki salah satu akun tersebut, Anda dapat masuk log secara langsung tanpa perlu mendaftarkan yang baru.</p>
+        </div>
+            <hr>
+        <div class="input_field">
+            <div class="input">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="nameSignup"  required>
+                <p>Enter your fullname</p>
+            </div>
+            <div class="input">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="emailSignup" required>
+                <p>Enter your Email</p>
+            </div>
+            <div class="input">
+                <label for="password">Password</label>
+                <input type="password" name="password" id="passwordSignup"  required>
+                <i class="far fa-eye" id="togglePassword" style="margin-left: -30px; cursor: pointer;"></i>
+                <p>A combination of 8 to 25 letters (upper/lower), numbers, and symbols without spaces</p>
+            </div>
+            <div class="input">
+                <label for="password">Re-enter the password</label>
+                <input type="password" name="password" id="passwordReenter" required>
+                <i class="far fa-eye" id="toggleRepassword" style="margin-left: -30px; cursor: pointer;"></i>
+                <p id="message">Enter your password again.</p>
+            </div>
+            <div class="input">
+                <div class="country_select">
+                    <label for="countries">&#160; Country</label>
+                    <!-- <span class="flag" id="flag"></span> -->
+                    <select class="countries" name="countries" id="countries"></select>    
+                </div>
+                <div class="laguage">
+                    <label for="laguage">Laguage</label>
+                    <select name="laguage" id="laguageSignup">
+                        <option value="ENG">English</option>
+                        <option value="ID">Indonesia</option>
+                    </select>
+                </div>  
+            </div>
+        </div>
+        <!------------ Terms and Conition ------------>
+        <div class="customer_TermsConditions">
+            <input type="checkbox" name="terms-text">
+            <label for="terms-text">Saya menyetujui seluruh ketentuan berikut ini dan <a href="">Kebijakan Privasi.</a></label>
+        </div>
+            <hr class="hr_footer">
+        <!------------ Terms Iformation ------------>
+        <p class="information">
+            * Yakinlah bahwa informasi yang dikumpulkan hanya akan digunakan untuk tujuan pendaftaran dan pengelolaan akun Anda.
+            Setelah keanggotaan Anda berhasil didaftarkan, kami juga akan membantu Anda mendaftar sebagai Anggota Awan ASUS yang dimiliki oleh ASUS Cloud Corporation dengan akun dan kata sandi yang sama.
+        </p>
+        <!------------ Signup Button ------------>
+        <button type="button" id="btnSignup">Daftar</button>
+    </main>
+    <footer>
+        <hr>
+        <div class="footer_container">
+            <div class="footer_right">
+                <label>&copy;Streac Technology Inc. All rights reserved.</label>
+            </div>
+            <div class="footer_left"></div>
+        </div>
+    </footer>
+
+    
+<!--============= Load Javascript File ================-->
+    <script src="js/firebaseConfig.js"></script>
+    <script type="module" src="js/signupScript/firebaseApp.js"></script>
+    <script src="js/signupScript/countryNameScraping.js"></script>
+</body>
+</html>

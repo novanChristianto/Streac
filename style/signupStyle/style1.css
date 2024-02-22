@@ -1,0 +1,254 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+body{
+  height: 1800px;
+  background-color: #f5f5f5;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ============== NAV BAR ============ */
+nav{
+  top: 0;
+  /* overflow: hidden; */
+  position: fixed;
+  height: 50px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0px 0px 2px 1px rgba(0, 0, 0, 0.329);
+}
+.nav_container{
+  width: 90%;
+  height: 50px;
+  margin: 0px auto;
+  
+}
+.nav_container img{
+  margin-top: 13px;
+  margin-right: 20px;
+
+}
+
+
+/* =============== MAIN ============== */
+main{
+  margin: 100px auto;
+  width: 60%;
+  height: 1300px;
+  background-color: white;
+  border-radius: 15px;
+}
+  /* ------=== header text ===------ */
+.header_text{
+  width: 60%;
+  margin: 0px auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 10px;
+}
+.header_text label{
+  font-size: 2em;
+  font-weight: 500;
+  margin: 40px 0 20px 0;
+}
+.header_text p{
+  font-size: 1.1em;
+  text-align: center;
+  color: #6c757d;
+}
+
+main hr{
+  margin: 50px auto 20px auto;
+  width: 50%; 
+}
+
+  /* -------=== Input Form ===------ */
+
+.input_field{
+  display: flex;
+  flex-direction: column;
+  /* background-color: #6c757d; */
+  width: 50%;
+  margin: 0px auto;
+}
+.input_field .input{margin-top: 40px;}
+.input_field input{
+  width: 100%;
+  height: 30px;
+  margin: 10px 0px;
+  padding: 5px 0px 5px 5px;
+  border-radius: 5px;
+  border: 1px solid #6c757d;;
+}
+.input_field input:hover{ border-color: #3367d6; }
+.input_field input:focus{ border: 1px solid  #3367d6; outline: 0; }
+.input_field p{font-size: small; color: #6c757d;  }
+.input i{color: #6c757d;}
+.input i:hover{color: #3367d6;}
+/* ------- Country Option -------  */
+.input_field .input:nth-child(5){display: flex;}
+.input .country_select select{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  height: 40px;
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin-top: 10px;
+}
+.input .country_select select:hover{border-color: #3367d6;}
+.input .country_select select:focus{border-color: #3367d6;}
+/* ------- Laguage Option -------  */
+.input_field .laguage{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.laguage select{
+  border-radius: 5px;
+  padding: 10px 5px;
+  margin-top: 10px;
+  height: 40px;
+}
+
+/* -----== Terms Condition Check ==-----  */
+.customer_TermsConditions{
+  margin: 50px auto;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.customer_TermsConditions label{
+  padding-left: 1.5%;
+  padding-right: 4%;
+}
+
+main .information{
+  margin: 2px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  font-size: small;
+  color: #6c757d;
+}
+/* -----== SignUp Button==-----  */
+main button{
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  height: 4em;
+  font-size: large;
+  color: #fff;
+  background-color: #4285f4;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+main button:hover{
+  background-color: #042366;
+}
+
+
+.g-sign-in-button {
+  margin: 10px ;
+  display: inline-block;
+  width: 240px;
+  height: 50px;
+  background-color: #4285f4;
+  color: #fff;
+  border-radius: 1px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: background-color 0.218s, border-color 0.218s, box-shadow 0.218s;
+}
+
+.g-sign-in-button:active {
+  background-color: #3367d6;
+  transition: background-color 0.2s;
+}
+
+.g-sign-in-button .content-wrapper {
+  height: 100%;
+  width: 100%;
+  border: 1px solid transparent;
+}
+
+.g-sign-in-button img {
+  width: 18px;
+  height: 18px;
+}
+
+.g-sign-in-button .logo-wrapper {
+  padding: 15px;
+  background: #fff;
+  width: 48px;
+  height: 100%;
+  border-radius: 1px;
+  display: inline-block;
+}
+
+.g-sign-in-button .text-container {
+  font-family: Roboto, arial, sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.21px;
+  font-size: 16px;
+  line-height: 48px;
+  vertical-align: top;
+  border: none;
+  display: inline-block;
+  text-align: center;
+  width: 180px;
+}
